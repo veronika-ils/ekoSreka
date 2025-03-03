@@ -1,0 +1,93 @@
+<template>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <div class="nav">
+        <ul>
+            <div >
+            <router-link to="/"> <img src="../img/home.png" class="home"></router-link>   
+            </div>
+            <div class="dropdown">
+
+                 <img  src="../img/menu.png" class="icon">   
+                
+                <div class="dropdown-content">
+                    <a href="#"><router-link to="/MKEnviroment">Животната Средина</router-link></a>
+                    <a href="#"><router-link to="/MKRegional">Македонија и Регионот</router-link></a>
+                    <a href="#"><router-link to="/MKTodayPage">Светот денес</router-link></a>
+                    <a href="#"><router-link to="/MKQuizzes">Квизови</router-link></a>
+                    <a href="#"><router-link to="/MKFunPage">Забава</router-link></a>
+                    <a href="#"><router-link to="/MKAbout">За нас</router-link></a>
+                    <span  class="homeD">
+                        <a hre="#"><router-link to="/" >Дома</router-link> </a>
+                    </span>
+                </div>
+             </div>
+            
+             <li class="small" ><router-link to="/FotoPage" class="none">    EN  </router-link>  </li> 
+            <li class="this small"><router-link to="/MKFotoPage" class="none">MK</router-link></li>
+        <li class="logo"> <img src="../img/logo4.png"></li>  
+        </ul>
+     </div>
+    <router-link to="/MK1Page">
+
+    
+     <div class="foto">
+        <img src="../img/mk1.png">
+        <p >  Водич за Рециклирање на Пластика: Како да Допринесеме за Почиста Средина?
+            </p>
+     </div>
+    </router-link>
+    
+    <router-link to="/MK2Page">
+    <div class="foto">
+        <img src="../img/mk2.png" class="hori">
+        <p>Рециклирајте за Почиста и Позелена Иднина!</p>
+             </div>
+    </router-link>
+    <router-link to="/MK3Page">
+    <div class="foto foto3">
+        <img src="../img/mk3.png">
+        <p>  Еко-замени во Кујната: Намали го Отпадот и Заштити ја Планетата!</p>
+         </div>
+    </router-link>
+
+   
+    <div class="footer">
+        <h1>Пишете ни!</h1>
+        
+        <table>
+            <tr>
+                <td>
+                  <img src="../img/insta.png">  
+                </td>
+                <td><p>@ecosrekja</p></td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../img/face.png">
+               
+                </td>
+                <td><p>@ecosrekja</p></td>
+            </tr>
+            <tr>
+                <td>    
+               <img src="../img/mail.png"> 
+                </td>
+                <td><p><a href="mailto:ecosrekja@gmail.com">ecosrekja@gmail.com</a></p></td>
+            </tr>
+        </table>
+             
+        
+    </div>
+    
+</template>
+<script>
+
+export default {
+    name:'MKFotoPage',
+   
+
+}
+</script>
+<style src="../style.css"></style>
