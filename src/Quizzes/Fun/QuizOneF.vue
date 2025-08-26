@@ -4,7 +4,7 @@
             <div>
                 <router-link to="/HomePage"> <img src="../../img/home.png" class="home"></router-link>
             </div>
-            <div class="dropdown">
+            <div class="my-dropdown">
                 <img src="../../img/menu.png" class="icon">
                 <div class="dropdown-content">
                     <a href="#"><router-link to="/Environment">Environment</router-link></a>
@@ -18,6 +18,8 @@
                     </span>
                 </div>
             </div>
+                  <li class="this small"><router-link to="/ENNationalPark" class="none">    EN  </router-link>  </li>    
+           <li class=" small"> <router-link to="/NationalPark" class="none">   MK </router-link> </li>  
             <li class="logo"> <img src="../../img/logo4.png"></li>
         </ul>
     </div>
@@ -39,7 +41,7 @@
     
         <div>
             <div>
-                <button @click="submitQuiz" :disabled="!allQuestionsAnswered || submit">Submit Quiz</button>
+                <button @click="submitQuiz" :disabled="!allQuestionsAnswered || submit" class="fun-submit">Done?</button>
             </div>
             <div v-if="allQuestionsAnswered && submit" class="score">
                 <span v-if="score<=6">

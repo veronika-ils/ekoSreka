@@ -4,7 +4,7 @@
             <div >
             <router-link to="/"> <img src="../../../img/home.png" class="home"></router-link>   
             </div>
-            <div class="dropdown">
+            <div class="my-dropdown">
 
                  <img  src="../../../img/menu.png" class="icon">   
                 

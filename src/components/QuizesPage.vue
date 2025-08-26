@@ -4,7 +4,7 @@
             <div >
             <router-link to="/HomePage"> <img src="../img/home.png"  class="home"></router-link> 
             </div>
-            <div class="dropdown">
+            <div class="my-dropdown">
 
                  <img  src="../img/menu.png" class="icon">   
                 
@@ -22,117 +22,170 @@
                 </div>
              </div> 
             
-             <li class="this small"><router-link to="/Quizzes" class="none">    EN  </router-link>  </li>    
-           <li class="small"> <router-link to="/MKQuizzes" class="none">   MK </router-link> </li>
+                   <li class="lang"><router-link to="/Quizzes" ><img src="../img/uk.webp"></router-link></li>
+            <li class=" lang"><router-link to="/MKQuizzes" ><img src="../img/mkd.png"></router-link></li>
             <li class="logo"> <img src="../img/logo4.png"></li>  
         </ul>
      </div>
-     <h1 class="level">Beginner</h1>
-     <hr>
-
+     <h1 class="level">Beginner </h1>
+     
      <div class="quiz-container">
-        <router-link to="/EcoConcepts">
-      <div class="quiz">
-        <img src="../img/quiz1.png">
-        <p class="name"> General Eco Concepts 101</p>
-        <p>Dive into the world of ecology with our "Eco Concepts 101" quiz!</p>
-     </div>
-     </router-link>
-  
-       
-     
-     <router-link to="/GreenAwareness">
-     <div class="quiz">
-        <img src="../img/quiz2.png">
-        <p class="name"> Basics of Eco Concepts</p>
-        <p> Test your knowledge of essential environmental concepts with the "Green Awareness Quiz".</p>
-     </div>
-     </router-link>
-     
-      <router-link to="/Eco-Discovery">
-     <div class="quiz">
-        <img src="../img/quiz3.png">
-        <p class="name">Uncovering Our Planet's Secrets</p>
-        <p>Dive into the Eco-Discovery Quiz, an engaging and enlightening journey designed to expand your knowledge about our environment! 
-       </p>
-     </div>
-   </router-link>
-    
-     
+  <router-link to="/EcoConcepts" class="quiz-link">
+    <div class="quiz-card" :style="{
+    backgroundImage: `url(${require('@/img/quiz1.png')})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }">
+      <div class="quiz-dark-overlay"></div>
+      <div class="quiz-overlay">
+        <h2 class="quiz-title">Eco Concepts 101</h2>
+        <p class="quiz-description">Dive into the world of ecology with our quiz "Eco Concepts 101"!</p>
       </div>
-     <h1 class="level">Intermidiate</h1>
-     <hr>
-     <div class="quiz-container">
-   <router-link to="/Eco-Engagement">
-     <div class="quiz">
-        <img src="../img/quiz4.png">
-        <p class="name">Eco-Engagement Challenge</p>
-        <p>Dive deeper into environmental issues with the "Eco-Engagement Challenge."
-          This quiz is designed for those with a foundational understanding of ecological concepts.</p>
-     </div>
-   </router-link>
-     
-   <router-link to="/Eco-Recycling">
-     <div class="quiz">
-        <img src="../img/quiz5.png">
-        <p class="name">How Well Do You Take Care of the Planet?</p>
-         <p>This quiz will encourage you to think about your daily habits that impact the environment.</p>
-     </div>
-</router-link>
+    </div>
+  </router-link>
+
+  <router-link to="/GreenAwareness" class="quiz-link">
+    <div class="quiz-card" :style="{
+    backgroundImage: `url(${require('@/img/quiz2.png')})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }">
+      <div class="quiz-dark-overlay"></div>
+      <div class="quiz-overlay">
+        <h2 class="quiz-title">Eco Detectives</h2>
+        <p class="quiz-description">A quiz that challenges participants to uncover ecological facts.</p>
+      </div>
+    </div>
+  </router-link>
+
+  <router-link to="/Eco-Discovery" class="quiz-link">
+    <div class="quiz-card" :style="{
+    backgroundImage: `url(${require('@/img/quiz3.png')})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }">
+      <div class="quiz-dark-overlay"></div>
+      <div class="quiz-overlay">
+        <h2 class="quiz-title">Exploring the Secrets of the Planet</h2>
+        <p class="quiz-description">An educational and fun quiz designed to encourage participants to discover fascinating facts about the Earth.</p>
+      </div>
+    </div>
+  </router-link>
 </div>
+
+
+    <h1 class="level">Intermidiate</h1>
+
+
+
+<div class="quiz-container">
+
+  <router-link to="/Eco-Engagement" class="quiz-link">
+    <div
+  class="quiz-card"
+  :style="{
+    backgroundImage: `url(${require('@/img/quiz4.png')})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }"
+>
+<div class="quiz-dark-overlay"></div>
+
+      <div class="quiz-overlay">
+        <h2 class="quiz-title">Eco Concepts – Intermediate Level</h2>
+        <p class="quiz-description">This quiz is designed for those with a basic understanding of ecological concepts who are looking for a bit of a challenge.</p>
+      </div>
+    </div>
+  </router-link>
+
+  <router-link to="/Eco-Recycling" class="quiz-link">
+   <div
+  class="quiz-card"
+  :style="{
+    backgroundImage: `url(${require('@/img/quiz5.png')})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }"
+>
+<div class="quiz-dark-overlay"></div>
+
+      <div class="quiz-overlay">
+        <h2 class="quiz-title">How Well Do You Care for the Planet?</h2>
+        <p class="quiz-description">This quiz will encourage you to reflect on your daily habits that impact the environment.</p>
+      </div>
+    </div>
+  </router-link>
+
+</div>
+
      <h1 class="level">Advanced</h1>
-     <hr>
+     
      <div class="quiz-container">
-     <router-link to="/Eco-Quiz">
-     <div class="quiz">
-        <img src="../img/quiz6.png">
-        <p class="name">Challenge for True Guardians of the Planet</p>
-         <p>Are you ready to test your ecological intelligence and prove your commitment to protecting the planet?</p>
-     </div>
-     </router-link>
+
+      <router-link to="/Eco-Quiz" class="quiz-link">
+   <div
+  class="quiz-card"
+  :style="{
+    backgroundImage: `url(${require('@/img/quiz6.png')})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }"
+>
+<div class="quiz-dark-overlay"></div>
+
+      <div class="quiz-overlay">
+        <h2 class="quiz-title">Challenge for True Guardians of the Planet</h2>
+        <p class="quiz-description">Are you ready to test your environmental intelligence and prove your commitment to protecting the planet?</p>
+      </div>
+    </div>
+  </router-link>
+
+
    </div>
   
      <h1 class="level">Entertainment</h1>
-     <hr>
-
+     
       <div class="quiz-container">
-         <router-link to="/ENNationalPark">
-     <div class="quiz">
-        <img src="../img/quiz7.png">
-        <p class="name">Which National Park Should You Visit?</p>
-<p>Find the perfect park for your next adventure! </p>
+
+        
+      <router-link to="/ENNationalPark" class="quiz-link">
+   <div
+  class="quiz-card"
+  :style="{
+    backgroundImage: `url(${require('@/img/quiz7.png')})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }"
+>
+<div class="quiz-dark-overlay"></div>
+
+      <div class="quiz-overlay">
+        <h2 class="quiz-title">Which National Park Should You Visit?</h2>
+        <p class="quiz-description">Discover the perfect park for your next adventure!</p>
+      </div>
+    </div>
+  </router-link>
+
+     
      </div>
-   </router-link>
-   </div>
-     
-     
-     <div class="footer">
-            <h1>Connect with us</h1>
-            
-            <table>
-                <tr>
-                    <td>
-                      <img src="../img/insta.png">  
-                    </td>
-                    <td><p>@ecosrekja</p></td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="../img/face.png">
-                   
-                    </td>
-                    <td><p>@ecosrekja</p></td>
-                </tr>
-                <tr>
-                    <td>    
-                   <img src="../img/mail.png"> 
-                    </td>
-                    <td><p><a href="mailto:ecosrekja@gmail.com">ecosrekja@gmail.com</a></p></td>
-                </tr>
-            </table>
-                 
-            
-        </div>
+            <footer class="footer">
+  <h2 class="footer-heading">📬 Connect with us!</h2>
+
+  <div class="footer-contact">
+    <div class="contact-item">
+      <img src="../img/insta.png" alt="Instagram" class="footer-icon">
+      <span>@ecosrekja</span>
+    </div>
+    <div class="contact-item">
+      <img src="../img/face.png" alt="Facebook" class="footer-icon">
+      <span>@ecosrekja</span>
+    </div>
+    <div class="contact-item">
+      <img src="../img/mail.png" alt="Email" class="footer-icon">
+      <span><a href="mailto:ecosrekja@gmail.com">ecosrekja@gmail.com</a></span>
+    </div>
+  </div>
+</footer>
      
     
 </template>

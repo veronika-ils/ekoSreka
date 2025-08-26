@@ -1,28 +1,32 @@
 <template>
-  
+  <div class="compact-news-card">
+    <router-link to="/MKWavesPage" class="news-title-link">
+      <img class="compact-img" src="../../img/waves.webp" alt="Јако бранови" />
 
-  
-    <div class="body3">
-        <img  src="../../img/waves.webp" alt="Јако бранови">
-      <router-link to="/MKWavesPage" class="news">  
-        <p>Светот денес, 24.02.2025</p>
-        <h1>Брановите стануваат поголеми: Дали светот е подготвен?</h1>
-        <br>
-        <p> Светот сега се соочува со еден нов природен предизвик – брановите во Јужниот океан растат побрзо
-           и постојано стануваат поголеми. Овој феномен, кој се должи на интензивните климатски промени и зголеменетата  морска активност,
-               создава сериозни закани за прибрежните области, но истовремено отвора можности за нови иновативни решенија.
+      <div class="compact-content">
+        <p class="news-date">Светот денес, 24.02.2025</p>
+        <h2 class="compact-title">
+          Брановите стануваат поголеми: Дали светот е подготвен?
+        </h2>
+        <p class="compact-text">
+          Брановите во Јужниот океан растат побрзо и стануваат се поголеми – закана за крајбрежните подрачја,
+          но и шанса за иновации.
+          <span class="dots" v-if="!isExpanded">...</span>
+          <span :class="{ less: isExpanded, more: !isExpanded }">
+            Овој феномен, кој се должи на климатските промени и засилена морска активност, предизвикува загриженост.
+            Некои научници, сепак, гледаат и потенцијални придобивки во контекст на климатската криза...
+          </span>
+        </p>
 
-             <span class="dots"  v-if="!isExpanded">...</span>
-             <span  :class="{'less' : isExpanded, 'more' : !isExpanded}"> И покрај ризиците, некои научници сметаат дека поголемите бранови може да донесат и позитивни ефекти, 
-             особено во контекстот на климатската криза... </span></p>
-            
-            </router-link>
-             <button class="myBtn" @click="expand" >{{ isExpanded ? 'Read Less' : 'Read More' }}</button>
-
-    </div>
-    
-    
+        <button class="myBtn" @click.stop.prevent="expand">
+          {{ isExpanded ? 'Прочитај помалку' : 'Прочитај повеќе' }}
+        </button>
+      </div>
+    </router-link>
+  </div> 
 </template>
+
+
 <script>
 
 

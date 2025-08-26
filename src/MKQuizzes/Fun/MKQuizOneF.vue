@@ -3,9 +3,9 @@
   <div class="nav">
         <ul>
             <div >
-            <router-link to="/MKHomePage"> <img src="../../img/home.png" class="home"></router-link>   
+            <router-link to="/"> <img src="../../img/home.png" class="home"></router-link>   
             </div>
-            <div class="dropdown">
+            <div class="my-dropdown">
 
                  <img  src="../../img/menu.png" class="icon">   
                 
@@ -21,33 +21,48 @@
                     </span>
                 </div>
              </div>
-            
+             <li class=" small"><router-link to="/ENNationalPark" class="none">    EN  </router-link>  </li>    
+           <li class="this small"> <router-link to="/NationalPark" class="none">   MK </router-link> </li>  
         <li class="logo"> <img src="../../img/logo4.png"></li>  
         </ul>
      </div>
 
-    <div class="quizzes">
-      <h1>{{ quiz.title }}</h1>
     
-      <h2>Прашања</h2>
-      <ol>
+      <div class="quizzes">
+        <h1 class="main-title">{{ quiz.title }}</h1>
+      
+        <h2 class="sub-title">Прашања</h2>
+        <div v-for="(question, index) in quiz.questions" :key="index" class="question-block">
 
-        <li v-for="(question, index) in quiz.questions" :key="index">
-          <p>{{ question.question }}</p>
-          <ul class="list">
-            <li v-for="(answer, answerIndex) in question.answers" :key="answerIndex" class="symbol">
-              <button @click="selectAnswer(index, answer)" :class="{ selected: answers[index] === answer }" 
-              :disabled="submit && answers[index] !== answer" >{{ answer }}</button>
-            </li>
-          </ul>
-        </li>
+  <p class="question-text">{{ index + 1 }}. {{ question.question }}</p>
+            <ul class="list">
+              <li
+  v-for="(answer, answerIndex) in question.answers"
+  :key="answerIndex"
+ class="answer-option"
+>
+  <button
+    @click="selectAnswer(index, answer)"
+    :class="{ selected: answers[index] === answer }"
+    :disabled="submit && answers[index] !== answer"
+  >
+    {{ answer }}
+  </button>
+</li>
+            </ul>
+       
+</div>
 
-      </ol>
-   
-    <div>
-    <div >
-      <button @click="submitQuiz" :disabled="!allQuestionsAnswered || submit">Submit Quiz</button>
-    </div>
+     
+      <div>
+      <div >
+        <button @click="submitQuiz" :disabled="!allQuestionsAnswered || submit" class="fun-submit">Готово?</button>
+      </div>
+  
+     
+
+
+
 
     <div v-if="allQuestionsAnswered && submit" class="score">
       <span v-if="score<=6">
@@ -62,7 +77,7 @@
         <h2>🌊 Ти треба да го посетиш Националниот Парк Галичица!</h2>
         <img src="../../img/galicica.jpg" alt="Галичица"  class="park">
       </span>
-      <button @click="restartQuiz">Пробај повторно?</button>
+      <button @click="restartQuiz" class="retry-button">Пробај повторно?</button>
     </div>
      </div>
   </div>

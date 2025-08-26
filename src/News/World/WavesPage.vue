@@ -5,7 +5,7 @@
               <div>
                   <router-link to="/HomePage"> <img src="../../img/home.png" class="home"></router-link>
               </div>
-              <div class="dropdown">
+              <div class="my-dropdown">
                   <img src="../../img/menu.png" class="icon">
                   <div class="dropdown-content">
                       <a href="#"><router-link to="/EnviromentPage">Environment</router-link> </a>

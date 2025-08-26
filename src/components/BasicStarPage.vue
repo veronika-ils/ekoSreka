@@ -7,7 +7,7 @@
             <div >
             <router-link to="/HomePage"> <img src="../img/home.png"  class="home"></router-link> 
             </div>
-            <div class="dropdown">
+            <div class="my-dropdown">
 
                  <img  src="../img/menu.png" class="icon">   
                 
@@ -25,8 +25,9 @@
                 </div>
              </div> 
             
-             <li class="this small"><router-link to="/BasicStarPage" class="none">    EN  </router-link>  </li>    
-           <li class="small"> <router-link to="/MKBasicStarPage" class="none">   MK </router-link> </li>
+          
+           <li class="lang"><router-link to="/BasicStarPage" ><img src="../img/uk.webp"></router-link></li>
+            <li class=" lang"><router-link to="/MKBasicStarPage" ><img src="../img/mkd.png"></router-link></li>
             <li class="logo"> <img src="../img/logo4.png"></li>  
         </ul>
      </div>

@@ -7,7 +7,7 @@
             <div >
             <router-link to="/HomePage"> <img src="../img/home.png"  class="home"></router-link> 
             </div>
-            <div class="dropdown">
+            <div class="my-dropdown">
 
                  <img  src="../img/menu.png" class="icon">   
                 
@@ -25,61 +25,69 @@
                 </div>
              </div> 
             
-             <li class="this small"><router-link to="/VideoPage" class="none">    EN  </router-link>  </li>    
-           <li class="small"> <router-link to="/MKVideoPage" class="none">   MK </router-link> </li>
+                <li class="lang"><router-link to="/VideoPage" ><img src="../img/uk.webp"></router-link></li>
+            <li class=" lang"><router-link to="/MKVideoPage" ><img src="../img/mkd.png"></router-link></li>
             <li class="logo"> <img src="../img/logo4.png"></li>  
         </ul>
      </div>
 
+    
+    <div class="videosDiv">
+
+
+
      <router-link to="/1VideoPage">
-     <div class="video">
-     <video src="../videos/video1.mp4" autoplay loop muted></video>  
-      <p>Children – A Reflection of Our Actions: Plant a Tree, Plant the Future!</p>
-     </div>   
-     </router-link>
-     
-     <router-link to="/2VideoPage">
-     <div class="video">
-      <video src="../videos/video2.mp4" autoplay loop muted></video>   
-      <p>We dream of a clean future – The environment is in our hands!</p>
-     </div>
+     <div class="my-card">
+            <video src="../videos/video1.mp4" autoplay loop muted class="card-image"></video>  
+             <div class="card-content">
+            <h2>Children – A Reflection of Our Actions: Plant a Tree, Plant the Future!</h2>
+                </div>
+        </div>
     </router-link>
-    <router-link to="/3VideoPage">
-     <div class="video">
-      <video src="../videos/video3.mp4" autoplay loop muted></video>   
-      <p>Clean Air – A Shared Responsibility for a Better Future.</p>
-     </div>
+
+
+
+        <router-link to="/2VideoPage">
+     <div class="my-card">
+            <video src="../videos/video2.mp4" autoplay loop muted class="card-image"></video>  
+             <div class="card-content">
+            <h2>We dream of a clean future – The environment is in our hands!</h2>
+                </div>
+        </div>
     </router-link>
+
+
+
+     <router-link to="/3VideoPage">
+     <div class="my-card">
+            <video src="../videos/video3.mp4" autoplay loop muted class="card-image"></video>  
+             <div class="card-content">
+            <h2>Clean Air – A Shared Responsibility for a Better Future.</h2>
+                </div>
+        </div>
+    </router-link>
+    </div>
     
 
-   
-    <div class="footer">
-        <h1>Connect with us</h1>
-        
-        <table>
-            <tr>
-                <td>
-                  <img src="../img/insta.png">  
-                </td>
-                <td><p>@ecosrekja</p></td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../img/face.png">
-               
-                </td>
-                <td><p>@ecosrekja</p></td>
-            </tr>
-            <tr>
-                <td>    
-               <img src="../img/mail.png"> 
-                </td>
-                <td><p><a href="mailto:ecosrekja@gmail.com">ecosrekja@gmail.com</a></p></td>
-            </tr>
-        </table>
-             
-        
+    
+ <footer class="footer">
+  <h2 class="footer-heading">📬 Connect with us!</h2>
+
+  <div class="footer-contact">
+    <div class="contact-item">
+      <img src="../img/insta.png" alt="Instagram" class="footer-icon">
+      <span>@ecosrekja</span>
     </div>
+    <div class="contact-item">
+      <img src="../img/face.png" alt="Facebook" class="footer-icon">
+      <span>@ecosrekja</span>
+    </div>
+    <div class="contact-item">
+      <img src="../img/mail.png" alt="Email" class="footer-icon">
+      <span><a href="mailto:ecosrekja@gmail.com">ecosrekja@gmail.com</a></span>
+    </div>
+  </div>
+</footer>
     
 </template>
 <script>

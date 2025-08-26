@@ -1,36 +1,32 @@
+
 <template>
-  
+  <div class="compact-news-card">
+    <router-link to="/ExOne" class="news-title-link">
+      <img class="compact-img" src="../../../img/demo.jpg"  />
 
-  
-    <div class="body3">
-        <img  src="../../../img/demo.jpg">
-      <router-link to="/ExOne" class="news">  
-        <p>Regional, 01.01.2024</p>
-        <h1>Title</h1>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at feugiat eros,
-             sed aliquam justo. Etiam tempor felis a lorem semper vestibulum. Nulla ullamcorper lobortis felis, 
-             ac consequat mauris consectetur at. Morbi a turpis leo. Morbi commodo, nisi ac porttitor suscipit, 
-             velit mi efficitur justo, a tristique velit metus vel justo. Nulla nec sem tortor. Etiam nec velit luctus,
-              vestibulum lectus non, sagittis leo. Vivamus ac nisl odio. Ut sed ultrices leo. Sed felis nisl, porta non pulvinar vel,
-               pulvinar non elit. Aenean consequat, est ut fringilla vulputate, mauris tortor blandit odio,
-             et tincidunt justo neque sit amet mi.
-             <span class="dots"  v-if="!isExpanded">...</span>
-             <span  :class="{'less' : isExpanded, 'more' : !isExpanded}">   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at feugiat eros,
-             sed aliquam justo. Etiam tempor felis a lorem semper vestibulum. Nulla ullamcorper lobortis felis, 
-             ac consequat mauris consectetur at. Morbi a turpis leo. Morbi commodo, nisi ac porttitor suscipit, 
-             velit mi efficitur justo, a tristique velit metus vel justo. Nulla nec sem tortor. Etiam nec velit luctus,
-              vestibulum lectus non, sagittis leo. Vivamus ac nisl odio. Ut sed ultrices leo. Sed felis nisl, porta non pulvinar vel,
-               pulvinar non elit. Aenean consequat, est ut fringilla vulputate, mauris tortor blandit odio,
-             et tincidunt justo neque sit amet mi.</span></p>
-            
-            </router-link>
-             <button class="myBtn" @click="expand" >{{ isExpanded ? 'Read Less' : 'Read More' }}</button>
+      <div class="compact-content">
+        <p class="news-date">Regional, 01.01.202</p>
+        <h2 class="compact-title">
+          Ноќни екскурзии на италијанскиот вулкан Етна предизвикуваат загрижености
+        </h2>
+        <p class="compact-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at feugiat eros
+          <span class="dots" v-if="!isExpanded">...</span>
+          <span :class="{ less: isExpanded, more: !isExpanded }">
+            Појавата на ноќни екскурзии предизвикува загрижености меѓу локалната власт, вулканолозите
+            и туристичките експерти...
+          </span>
+        </p>
 
-    </div>
-    
-    
+        <button class="myBtn" @click.stop.prevent="expand">
+          {{ isExpanded ? 'Прочитај помалку' : 'Прочитај повеќе' }}
+        </button>
+      </div>
+    </router-link>
+  </div>
 </template>
+
+
 <script>
 
 

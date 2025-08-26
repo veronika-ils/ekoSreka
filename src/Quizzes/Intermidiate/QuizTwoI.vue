@@ -4,7 +4,7 @@
             <div>
                 <router-link to="/HomePage"> <img src="../../img/home.png" class="home"></router-link>
             </div>
-            <div class="dropdown">
+            <div class="my-dropdown">
                 <img src="../../img/menu.png" class="icon">
                 <div class="dropdown-content">
                     <a href="#"><router-link to="/EnviromentPage">Environment</router-link> </a>
@@ -19,6 +19,8 @@
                  
                 </div>
             </div>
+                 <li class="this small"><router-link to="/Eco-Recycling" class="none">    EN  </router-link>  </li>    
+           <li class="small"> <router-link to="/MKEco-Recycling" class="none">   MK </router-link> </li>   
             <li class="logo"> <img src="../../img/logo4.png"></li>
         </ul>
     </div>
@@ -30,10 +32,19 @@
             <li v-for="(question, index) in quiz.questions" :key="index">
                 <p>{{ question.question }}</p>
                 <ul class="list">
-                    <li v-for="(answer, answerIndex) in question.answers" :key="answerIndex" class="symbol">
-                        <button @click="selectAnswer(index, answer)" :class="{ selected: answers[index] === answer }" 
-                        :disabled="submit && answers[index] !== answer">{{ answer }}</button>
-                    </li>
+                    <li
+  v-for="(answer, answerIndex) in question.answers"
+  :key="answerIndex"
+  class="symbol"
+>
+  <button
+    @click="selectAnswer(index, answer)"
+    :class="{ selected: answers[index] === answer }"
+    :disabled="submit && answers[index] !== answer"
+  >
+    {{ String.fromCharCode(97 + answerIndex) }}) {{ answer }}
+  </button>
+</li>
                 </ul>
                 <div v-if="allQuestionsAnswered && submit">
                     <p v-if="answers[index] !== undefined">
@@ -47,7 +58,7 @@
     
         <div>
             <div>
-                <button @click="submitQuiz" :disabled="!allQuestionsAnswered || submit">Submit Quiz</button>
+                <button @click="submitQuiz" :disabled="!allQuestionsAnswered || submit" class="fun-submit">Done?</button>
             </div>
             <div v-if="allQuestionsAnswered && submit" class="score">
                 <h2>Points earned:<br> <img src="../../img/trophy.png" class="imgs"> <span class="green">{{ score }}/{{ quiz.questions.length }}</span></h2>

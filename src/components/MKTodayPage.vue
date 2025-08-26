@@ -4,8 +4,8 @@
             <div >
             <router-link to="/"> <img src="../img/home.png" class="home"></router-link>   
             </div>
-            <div class="dropdown">
-
+            <div class="my-dropdown">
+ 
                  <img  src="../img/menu.png" class="icon">   
                 
                 <div class="dropdown-content">
@@ -21,43 +21,39 @@
                 </div>
              </div>
             
-             <li class="small" ><router-link to="/TodayPage" class="none">    EN  </router-link>  </li> 
-            <li class="this small"><router-link to="/MKTodayPage" class="none">MK</router-link></li>
+        
+          <li class="lang"><router-link to="/TodayPage" ><img src="../img/uk.webp"></router-link></li>
+            <li class=" lang"><router-link to="/MKTodayPage" ><img src="../img/mkd.png"></router-link></li>
+
         <li class="logo"> <img src="../img/logo4.png"></li>  
         </ul>
      </div>
+     <div class="old-news-grid">
      <MKWaves/>
         <MKEtna/>
         <ExOne/>
         <ExOne/>
-        <ExOne/>
-        <div class="footer">
-       <h1>Пишете ни!</h1>
-       
-       <table>
-           <tr>
-               <td>
-                 <img src="../img/insta.png">  
-               </td>
-               <td><p>@ecosrekja</p></td>
-           </tr>
-           <tr>
-               <td>
-                   <img src="../img/face.png">
-              
-               </td>
-               <td><p>@ecosrekja</p></td>
-           </tr>
-           <tr>
-               <td>    
-              <img src="../img/mail.png"> 
-               </td>
-               <td><p><a href="mailto:ecosrekja@gmail.com">ecosrekja@gmail.com</a></p></td>
-           </tr>
-       </table>
-            
-       
-   </div>
+        <ExOne/>   
+     </div>
+     
+       <footer class="footer">
+  <h2 class="footer-heading">📬 Пишете ни!</h2>
+
+  <div class="footer-contact"> 
+    <div class="contact-item">
+      <img src="../img/insta.png" alt="Instagram" class="footer-icon">
+      <span>@ecosrekja</span>
+    </div>
+    <div class="contact-item">
+      <img src="../img/face.png" alt="Facebook" class="footer-icon">
+      <span>@ecosrekja</span>
+    </div>
+    <div class="contact-item">
+      <img src="../img/mail.png" alt="Email" class="footer-icon">
+      <span><a href="mailto:ecosrekja@gmail.com">ecosrekja@gmail.com</a></span>
+    </div>
+  </div>
+</footer>
    </template>
    <script>
    import ExOne from './Latest/ex1/ex1c.vue';

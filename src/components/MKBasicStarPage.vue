@@ -7,7 +7,7 @@
             <div >
             <router-link to="/"> <img src="../img/home.png" class="home"></router-link>   
             </div>
-            <div class="dropdown">
+            <div class="my-dropdown">
 
                  <img  src="../img/menu.png" class="icon">   
                 
@@ -24,8 +24,8 @@
                 </div>
              </div>
             
-             <li class="small" ><router-link to="/BasicStarPage" class="none">    EN  </router-link>  </li> 
-            <li class="this small"><router-link to="/MKBasicStarPage" class="none">MK</router-link></li>
+            <li class="lang"><router-link to="/BasicStarPage" ><img src="../img/uk.webp"></router-link></li>
+            <li class=" lang"><router-link to="/MKBasicStarPage" ><img src="../img/mkd.png"></router-link></li>
         <li class="logo"> <img src="../img/logo4.png"></li>  
         </ul>
      </div>
@@ -39,33 +39,24 @@
      </div>
      
 
-     <div class="footer">
-        <h1>Пишете ни!</h1>
-        
-        <table>
-            <tr>
-                <td>
-                  <img src="../img/insta.png">  
-                </td>
-                <td><p>@ecosrekja</p></td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="../img/face.png">
-               
-                </td>
-                <td><p>@ecosrekja</p></td>
-            </tr>
-            <tr>
-                <td>    
-               <img src="../img/mail.png"> 
-                </td>
-                <td><p><a href="mailto:ecosrekja@gmail.com">ecosrekja@gmail.com</a></p></td>
-            </tr>
-        </table>
-             
-        
+      <footer class="footer">
+  <h2 class="footer-heading">📬 Пишете ни!</h2>
+
+  <div class="footer-contact">
+    <div class="contact-item">
+      <img src="../img/insta.png" alt="Instagram" class="footer-icon">
+      <span>@ecosrekja</span>
     </div>
+    <div class="contact-item">
+      <img src="../img/face.png" alt="Facebook" class="footer-icon">
+      <span>@ecosrekja</span>
+    </div>
+    <div class="contact-item">
+      <img src="../img/mail.png" alt="Email" class="footer-icon">
+      <span><a href="mailto:ecosrekja@gmail.com">ecosrekja@gmail.com</a></span>
+    </div>
+  </div>
+</footer>
     
 </template>
 <script>
