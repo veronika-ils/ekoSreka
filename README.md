@@ -1,4 +1,4 @@
-# eco-friendly
+# Еко Среќа
 
 ## Project setup
 ```
