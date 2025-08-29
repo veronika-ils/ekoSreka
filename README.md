@@ -23,11 +23,6 @@ The app supports both **desktop and mobile view** for an optimized user experien
 
 ---
 
-## 📷 Preview
-
-*(Add screenshots or GIFs here – e.g., homepage, news section, quiz, zodiac page, etc.)*  
-
----
 
 ## 🛠 Tech Stack
 
