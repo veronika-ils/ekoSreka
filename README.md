@@ -49,7 +49,3 @@ Its mission is to **spread awareness, encourage eco-friendly habits, and inspire
 
 ---
 
-**EkoSreka** is built as an eco-awareness platform where **knowledge, fun, and inspiration meet**.  
-Its mission is to **spread awareness, encourage eco-friendly habits, and inspire collective action** toward a healthier planet.  
-
----
