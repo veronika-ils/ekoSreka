@@ -1,41 +1,60 @@
-# EkoSreka Demo
+# EkoSreka (Demo)
 
-**EkoSreka** is a demo application for organizing books into three categories: **Read**, **Still Reading**, and **Liked**. This platform helps you track your reading journey in a clean, desktop-focused interface. Please note that it does **not yet support responsiveness** or **graceful fallback without JavaScript**.
+**EkoSreka** is a demo web application focused on **eco-awareness and inspiration**.  
+It combines **news, media content, games, quizzes, photos, videos, and zodiac insights** to promote sustainable living and raise awareness about protecting our planet.  
 
----
-
-##  Live Demo
-
-To explore the current demo, visit:
-[https://fascinating-squirrel-7009c7.netlify.app](https://fascinating-squirrel-7009c7.netlify.app)
-
-**Note**: The demo may not function fully if JavaScript is disabled or your browser blocks scripts :contentReference[oaicite:4]{index=4}.
+The app supports both **desktop and mobile view** for an optimized user experience.  
 
 ---
 
-##  Current Status & Known Limitations
+## Live Demo
 
-- **Core book management features** are implemented (organizing books into desired categories).
-- **JavaScript dependency**: App doesn’t load or operate properly without JavaScript enabled.
-- **Not responsive**: Optimized for desktop usage; mobile view is not supported or styled yet.
-- Missing features like **authentication**, **book details**, **search/filter**, and **UI polish**.
+👉 [Explore EkoSreka here](https://fascinating-squirrel-7009c7.netlify.app/)  
 
 ---
 
-##  Demo Highlights (screenshots & walkthrough welcome!)
+## Features
 
-*(Include screenshots or animated GIFs showing:
-- Book list view separated by category
-- Example interactions like adding or moving books
-- What happens when JavaScript is disabled)*
+- **Eco News** – Latest updates on the environment, climate change, and sustainability.  
+- **Games & Quizzes** – Learn about the planet in a fun and interactive way.  
+- **Photos & Videos** – Visual stories showcasing nature and eco-initiatives.  
+- **Zodiac & Eco Tips** – Eco-friendly insights tailored to your zodiac sign.  
+- **Eco Hub** – A central place for awareness, learning, and inspiration.  
 
 ---
 
-##  Getting Started (Local Setup)
+## 📷 Preview
 
-Clone the repo:
-```bash
-git clone https://github.com/your-username/ekosreka-demo.git
-cd ekosreka-demo
+*(Add screenshots or GIFs here – e.g., homepage, news section, quiz, zodiac page, etc.)*  
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: Vue.js (or adjust if different)  
+- **Hosting**: Netlify  
+- **Content**: Static and dynamic resources (images, videos, quizzes)  
 
 
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+- Report bugs  
+- Suggest new features  
+- Submit pull requests  
+
+---
+
+## 🌱 About
+
+**EkoSreka** is built as an eco-awareness platform where **knowledge, fun, and inspiration meet**.  
+Its mission is to **spread awareness, encourage eco-friendly habits, and inspire collective action** toward a healthier planet.  
+
+---
+
+**EkoSreka** is built as an eco-awareness platform where **knowledge, fun, and inspiration meet**.  
+Its mission is to **spread awareness, encourage eco-friendly habits, and inspire collective action** toward a healthier planet.  
+
+---
