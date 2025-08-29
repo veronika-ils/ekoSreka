@@ -26,7 +26,7 @@ The app supports both **desktop and mobile view** for an optimized user experien
 
 ## 🛠 Tech Stack
 
-- **Frontend**: Vue.js (or adjust if different)  
+- **Frontend**: Vue.js 
 - **Hosting**: Netlify  
 - **Content**: Static and dynamic resources (images, videos, quizzes)  
 
@@ -42,7 +42,7 @@ Contributions are welcome!
 
 ---
 
-## 🌱 About
+## About
 
 **EkoSreka** is built as an eco-awareness platform where **knowledge, fun, and inspiration meet**.  
 Its mission is to **spread awareness, encourage eco-friendly habits, and inspire collective action** toward a healthier planet.  
